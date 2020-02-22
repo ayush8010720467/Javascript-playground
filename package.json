@@ -1,11 +1,11 @@
 {
-  "name": "javascript-editor",
+  "name": "Javascript-playground",
   "version": "1.0.0",
   "description": "Javascript playground",
   "main": "editor.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages-deploy -- 'A custom commit message'"
   },
   "repository": {
     "type": "git",
@@ -16,8 +16,9 @@
   "bugs": {
     "url": "https://github.com/ayush8010720467/Javascript-playground/issues"
   },
-  "homepage": "https://github.com/ayush8010720467/Javascript-playground#readme",
+  "homepage": "https://ayush8010720467.github.io/Javascript-playground",
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "gh-pages-deploy": "^0.5.1"
   }
 }
