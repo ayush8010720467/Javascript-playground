@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Playground</title>
+</head>
+
+<body>
+    <h1>WELLCOME TO JAVASCRIPT PLAYGROUND</h1>
+    <button
+        style="background-color: #ee5786;color: #fff;margin: auto;display:table;padding:5px 20px;border:0;" onclick="window.executeCode.runcode()">Output</button>
+
+    <div style="display:flex">
+        <textarea id="code" style="width:50%;margin:0 15px;border:1px solid #eee;resize: none;" cols="5"
+            rows="35"></textarea>
+        <textarea id="result" style="width:50%;margin:0 15px;border:1px solid #eee;resize: none;" cols="5" rows="35" disabled></textarea>
+    </div>
+</body>
+<script src="./editor.js"></script>
+<style>
+    .sucess{
+        color: green;
+    }
+    .error{
+        color: red;
+    }
+</style>
+</html>
