@@ -1,7 +1,9 @@
 (function(){
+    print = console.log
     console.log = function (...args) {
         var res = "";
         var a = []
+        print(...args)
         for (let i = 0; i < arguments.length; i++) {
             try {
                 if(eval(`${arguments[i]}`)){
@@ -38,11 +40,9 @@ window.executeCode = {
     }
 
 }
-console.log("The value for the code is: ")
 var myCodeMirror = CodeMirror(document.getElementById('code'), {
     mode:  "javascript",
     lineNumbers: true,
     value: "function myScript(){return 100;}\n"
   });
   myCodeMirror.setSize('100%','100%');
-  alert(myCodeMirror.doc.getValue())
