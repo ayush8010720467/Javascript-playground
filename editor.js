@@ -20,8 +20,7 @@
 window.executeCode = {
     runcode: function () {
 
-        var code = document.getElementById('code');
-        code = code.value;
+        var code = myCodeMirror.doc.getValue();
         var result = '';
         var code_execute = function (code_value) {
             return eval(code_value);
@@ -39,3 +38,11 @@ window.executeCode = {
     }
 
 }
+console.log("The value for the code is: ")
+var myCodeMirror = CodeMirror(document.getElementById('code'), {
+    mode:  "javascript",
+    lineNumbers: true,
+    value: "function myScript(){return 100;}\n"
+  });
+  myCodeMirror.setSize('100%','100%');
+  alert(myCodeMirror.doc.getValue())

@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JS Playground</title>
+    <link rel="stylesheet" href="http://codemirror.net/lib/codemirror.css">
+    <script src="http://codemirror.net/lib/codemirror.js"></script>
+    <!-- <script src="http://codemirror.net/addon/edit/matchbrackets.js"></script>
+    <script src="http://codemirror.net/addon/edit/continuecomment.js"></script> -->
+    <script src="http://codemirror.net/mode/javascript/javascript.js"></script>
 </head>
 
 <body>
@@ -14,8 +19,8 @@
         style="background-color: #ee5786;color: #fff;margin: auto;display:table;padding:5px 20px;border:0;" onclick="window.executeCode.runcode()">Output</button>
 
     <div style="display:flex">
-        <textarea id="code" style="width:50%;margin:0 15px;border:1px solid #eee;resize: none;" cols="5"
-            rows="35"></textarea>
+        <div id="code" style="width:50%;margin:0 15px;border:1px solid #eee;resize: none;" cols="5"
+            rows="35"></div>
         <textarea id="result" style="width:50%;margin:0 15px;border:1px solid #eee;resize: none;" cols="5" rows="35" disabled></textarea>
     </div>
 </body>
