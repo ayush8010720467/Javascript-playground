@@ -1,4 +1,4 @@
-# Javascript-playground
+# Javascript-playground ![visitors](https://visitor-badge.laobi.icu/badge?page_id=ayush8010720467_Javascript-playground)
 [For Demo Please Click here](https://ayush8010720467.github.io/Javascript-playground/)
 <img src='./Screenshot.png'/>
 This is a basic javascript playground developed in Javascript. CodeMirror package is used in implementing the code editor for the plaground.
